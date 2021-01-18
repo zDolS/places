@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(App());
 }
 
 class MyApp extends StatelessWidget {
@@ -26,7 +26,11 @@ class MyApp extends StatelessWidget {
         // closer together (more dense) than on mobile platforms.
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
+<<<<<<< Updated upstream
       home: MyHomePage(title: 'Flutter Demo Home Page'),
+=======
+      home: MyHomePage(), //(title: 'Flutter Demo Home Page')
+>>>>>>> Stashed changes
     );
   }
 }
@@ -115,3 +119,62 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
+<<<<<<< Updated upstream
+=======
+
+class MyFirstWidget extends StatelessWidget {
+  @override
+  int counter = 0;
+
+  Widget build(BuildContext context) {
+    counter++;
+    print('counter: ${counter}');
+    print('build is run');
+
+    return Container(
+      //(counter),
+      child: Center(
+        child: Text('Hello! nyadya'),
+      ),
+    );
+  }
+
+  //Type contextRuntimeType() => context.runtimeType;
+}
+
+class MyFirstWidgetStatefull extends StatefulWidget {
+  @override
+  _State createState() => _State();
+}
+
+class _State extends State {
+  // contextRuntimeType() => context.runtimeType;
+  @override
+  int counter = 0;
+
+  Widget build(BuildContext context) {
+    print(contextRuntimeType());
+    counter++;
+    print('counter: ${counter}');
+    print('build State is run');
+    return Container(
+      //(counter),
+      child: Center(
+        child: Text('Hello!'),
+      ),
+    );
+  }
+
+  contextRuntimeType() => context.runtimeType;
+}
+
+class App extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'My First Widget Statefull',
+      home: MyFirstWidgetStatefull(),
+    );
+  }
+}
+>>>>>>> Stashed changes
