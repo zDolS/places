@@ -41,4 +41,4 @@ flutter:
         - asset: res/font/Roboto/Roboto-MediumItalic.ttf
         - asset: res/font/Roboto/Roboto-Thin.ttf
         - asset: res/font/Roboto/Roboto-Black.ttf
-        - asset: res/font/Roboto/Roboto-ThinItalic
+        - asset: res/font/Roboto/Roboto-ThinItalic.ttf
