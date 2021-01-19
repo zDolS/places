@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:places/ui/screen/sight_list_screen.dart';
 
 void main() {
+<<<<<<< Updated upstream
   runApp(MyApp());
+=======
+  runApp(SightListScreen());
+>>>>>>> Stashed changes
 }
 
 class MyApp extends StatelessWidget {
@@ -26,7 +31,11 @@ class MyApp extends StatelessWidget {
         // closer together (more dense) than on mobile platforms.
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
+<<<<<<< Updated upstream
       home: MyFirstWidget(), //(title: 'Flutter Demo Home Page')
+=======
+      home: MyHomePage(), //(title: 'Flutter Demo Home Page')
+>>>>>>> Stashed changes
     );
   }
 }
@@ -130,6 +139,11 @@ class MyFirstWidget extends StatelessWidget {
       ),
     );
   }
+<<<<<<< Updated upstream
+=======
+
+  //contextRuntimeType() => context.runtimeType;
+>>>>>>> Stashed changes
 }
 
 class MyFirstWidgetStateful extends StatefulWidget {
