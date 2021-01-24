@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(MaterialApp(home: SightListScreen()));
-
+/* Класс SightListScreen являеться заготовкой для панаели в верхней части приложения.
+  В данный момент он выстапет в качесте перевого стартового виджета с которого
+  открываеться приложение. Что бы выджет не был пустым в нем использутся наполнение из
+  части залания 4.5
+*/
 class SightListScreen extends StatefulWidget {
   @override
   _State createState() => _State();
@@ -14,12 +17,6 @@ class _State extends State {
       home: Scaffold(
         appBar: AppBar(
           title: Container(
-            // child: Text(
-            //   'Список\nинтересных мест',
-            //   style: TextStyle(fontSize: 32, color: Colors.black),
-            //   textAlign: TextAlign.left,
-            //   maxLines: 2,
-            // ),
             child: RichText(
               text: TextSpan(
                 children: <TextSpan>[
