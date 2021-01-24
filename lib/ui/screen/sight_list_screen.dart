@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
 
+/* Класс SightListScreen являеться заготовкой для панаели в верхней части приложения.
+  В данный момент он выстапет в качесте перевого стартового виджета с которого
+  открываеться приложение. Что бы выджет не был пустым в нем использутся наполнение из
+  части залания 4.5
+*/
 class SightListScreen extends StatefulWidget {
   @override
   _State createState() => _State();
