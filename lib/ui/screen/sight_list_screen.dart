@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:places/constants.dart' as Constants;
 
 void main() => runApp(MaterialApp(home: SightListScreen()));
 
@@ -24,6 +25,7 @@ class _State extends State {
               text: TextSpan(
                 children: <TextSpan>[
                   TextSpan(
+<<<<<<< Updated upstream
                       text: 'С',
                       style: TextStyle(
                           fontSize: 32,
@@ -47,6 +49,14 @@ class _State extends State {
                           fontSize: 32,
                           color: Colors.black,
                           fontWeight: FontWeight.bold)),
+=======
+                    text: Constants.APP_BAR_TITLE_MESSAGE,
+                    style: TextStyle(
+                        fontSize: 32,
+                        color: Colors.black,
+                        fontWeight: FontWeight.bold),
+                  ),
+>>>>>>> Stashed changes
                 ],
               ),
             ),
